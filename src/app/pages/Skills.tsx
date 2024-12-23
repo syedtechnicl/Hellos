@@ -6,8 +6,8 @@ import {
   FaGitAlt,
   FaReact,
   FaNode,
-  FaArrowRightLong,
 } from "react-icons/fa";
+
 import { DiJavascript } from "react-icons/di";
 import { FiGithub } from "react-icons/fi";
 import {
@@ -44,7 +44,7 @@ const Skills = () => {
         >
           {/* Left Column with Buttons */}
           <Box flex={1} mb={{ base: 6, md: 0 }} textAlign="center">
-            <HStack wrap="wrap" justify="center" spacing={6}>
+            <HStack wrap="wrap" justify="center">
               {/* Using motion for infinite animation */}
               <motion.div
                 initial={{ opacity: 0 }}
