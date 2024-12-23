@@ -59,22 +59,20 @@
 // new nav
 import { Box, Flex, Link } from "@chakra-ui/react";
 
-const NavigationBar = () => {
-  return (
-    <Box bg="teal.500" p={4}>
-      <Flex as="nav" justify="space-between">
-        <Link href="/" color="white" px={4}>
-          Home
-        </Link>
-        <Link href="/about" color="white" px={4}>
-          About
-        </Link>
-        <Link href="/contact" color="white" px={4}>
-          Contact
-        </Link>
-      </Flex>
-    </Box>
-  );
-};
+const NavigationBar = () => (
+  <Box bg="blue.500" px={4} py={2}>
+    <Flex justify="space-between">
+      <Link color="white" href="/">
+        Home
+      </Link>
+      <Link color="white" href="/about">
+        About
+      </Link>
+      <Link color="white" href="/contact">
+        Contact
+      </Link>
+    </Flex>
+  </Box>
+);
 
 export default NavigationBar;
