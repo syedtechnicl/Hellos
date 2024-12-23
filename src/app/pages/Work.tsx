@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Projects from "./Projects"; // Assuming this contains an array of 14 project objects.
 import Image from "next/image";
@@ -43,7 +43,7 @@ const Work = () => {
       {/* Grid setup for displaying rows of 2 cards */}
       <SimpleGrid
         columns={{ base: 1, md: 2 }} // 1 card per row on small screens, 2 on larger screens
-        spacing={8} // Add space between cards
+        // Add space between cards
         p="20px"
       >
         {/* Loop through Projects array, ensuring we show 2 cards per row */}
