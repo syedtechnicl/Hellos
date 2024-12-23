@@ -1,4 +1,4 @@
-import { Box, Button, Container, Input, Stack, Text, Grid, GridItem, StackProps } from "@chakra-ui/react"; 
+import { Box, Container, Grid, GridItem } from "@chakra-ui/react";
 import { Field } from "@/components/ui/field";
 import "../styles/Formstyle.css";
 import Image from "next/image";
@@ -86,60 +86,7 @@ const Contact = () => {
         </GridItem>
 
         <GridItem>
-          <Box className="contact-form">
-            {/* Correctly typed Stack component */}
-            <Stack spacing={6}>
-              <Text fontSize="3xl" fontWeight="bold">
-                CONTACT DETAILS
-              </Text>
-              <Text className="contact-helper-text">
-                Please provide your contact details below.
-              </Text>
-
-              <Field label="Name">
-                <Input
-                  className="contact-inputs"
-                  name="name"
-                  type="text"
-                  placeholder="Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </Field>
-
-              <Field label="Email Address">
-                <Input
-                  className="contact-inputs"
-                  name="email"
-                  type="email"
-                  placeholder="Email Address"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </Field>
-
-              <Field label="Message">
-                <Input
-                  className="contact-inputs"
-                  name="message"
-                  type="text"
-                  placeholder="Message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                />
-              </Field>
-
-              <Button
-                className="contact-button"
-                onClick={submit}
-                isLoading={loading}
-                loadingText="Submitting"
-                colorScheme="teal"
-              >
-                Submit
-              </Button>
-            </Stack>
-          </Box>
+          <Box className="contact-form"></Box>
         </GridItem>
       </Grid>
     </Container>
