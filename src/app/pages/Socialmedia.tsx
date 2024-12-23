@@ -28,7 +28,6 @@ export const SocialMedia = () => {
       {/* Social Media Icons */}
       <Stack
         direction={{ base: "column", md: "row" }} // Stack vertically on small screens, horizontally on medium and up
-        spacing={6}
         justify="center" // Center icons horizontally
         align="center" // Center icons vertically
         px={{ base: 4, md: 0 }} // Add padding on smaller screens
@@ -36,7 +35,6 @@ export const SocialMedia = () => {
         <Box p={1}>
           <Link
             href="https://www.instagram.com"
-            isExternal
             target="_blank" // Opens in a new tab
             rel="noopener noreferrer"
           >
@@ -47,7 +45,6 @@ export const SocialMedia = () => {
         <Box p={1}>
           <Link
             href="https://www.linkedin.com/in/aleeza-saleem-509b37259/"
-            isExternal
             target="_blank" // Opens in a new tab
             rel="noopener noreferrer"
           >
