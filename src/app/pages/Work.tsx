@@ -7,7 +7,12 @@ import { Box, Button, Container, Text, SimpleGrid } from "@chakra-ui/react";
 import { motion } from "framer-motion"; // For scroll animation
 
 // Custom arrow components for slider navigation (optional for now)
-const Arrow = ({ direction, onClick }) => (
+
+interface ArrowProps {
+  direction: "next" | "prev";
+  onClick: () => void;
+}
+const Arrow: React.FC<ArrowProps> = ({ direction, onClick }) => (
   <Box
     onClick={onClick}
     position="absolute"
