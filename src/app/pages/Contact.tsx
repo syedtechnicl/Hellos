@@ -1,10 +1,19 @@
-import { Box, Container, Grid, GridItem } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Container,
+  Grid,
+  GridItem,
+  Input,
+  Text,
+} from "@chakra-ui/react";
 import { Field } from "@/components/ui/field";
 import "../styles/Formstyle.css";
 import Image from "next/image";
 import Logo from "../images/ma.jpg";
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { MdTouchApp } from "react-icons/md";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -25,7 +34,7 @@ const Contact = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        "https://portfolio-6da77-default-rtdb.asia-southeast1.firebasedatabase.app/UserData.json",
+        "https://contact-d435a-default-rtdb.firebaseio.com/UserData.json",
         {
           method: "POST",
           headers: {
@@ -86,7 +95,71 @@ const Contact = () => {
         </GridItem>
 
         <GridItem>
-          <Box className="contact-form"></Box>
+          <Box
+            className="contact-form"
+            padding={6}
+            boxShadow="md"
+            borderRadius="md"
+          >
+            <h1
+              style={{
+                fontSize: "30px",
+                fontWeight: "bold",
+                textDecoration: "underline",
+                textDecorationColor: "blue",
+                color: "green",
+                animation: "colorAnimation 4s infinite ease-in-out",
+              }}
+            >
+              Contact <span style={{ color: "red" }}>Me</span>
+            </h1>
+
+            <style>
+              {`
+    @keyframes colorAnimation {
+      0% { color: green; }
+      33% { color: red; }
+      66% { color: blue; }
+      100% { color: green; }
+    }
+  `}
+            </style>
+
+            <br />
+            <Input
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.currentTarget.value)}
+              marginBottom={4}
+              size="lg"
+              required
+            />
+            <Input
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.currentTarget.value)}
+              marginBottom={4}
+              size="lg"
+              required
+            />
+            <Input
+              placeholder="Message"
+              value={message}
+              onChange={(e) => setMessage(e.currentTarget.value)}
+              marginBottom={4}
+              size="lg"
+              required
+            />
+            <Button
+              onClick={() => {
+                submit();
+              }}
+              colorScheme="teal"
+              size="lg"
+            >
+              Submit <MdTouchApp />
+            </Button>
+          </Box>
         </GridItem>
       </Grid>
     </Container>
