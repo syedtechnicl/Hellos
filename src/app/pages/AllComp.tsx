@@ -10,13 +10,13 @@ import Work from "./Work";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Map from "./Map";
-import NavigationBar from "./NavigationBar";
+// import NavigationBar from "./NavigationBar";
 
 const AllComp = () => {
   return (
     <>
       <Name />
-      <NavigationBar />
+      {/* <NavigationBar /> */}
       <Section />
       <SocialMedia />
       <Skills />
