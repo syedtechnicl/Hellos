@@ -2,7 +2,7 @@ import { Container, Box, Text, Grid, Button, Flex } from "@chakra-ui/react";
 import AleezaAnim from "@/app/images/aleeza.png";
 import Image from "next/image";
 import { useEffect } from "react";
-import Typewriter from "typewriter-effect/dist/core";
+// import Typewriter from "typewriter-effect/dist/core";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
 import "../styles/anim.css";
 import { AboutMe } from "./AboutMe";
