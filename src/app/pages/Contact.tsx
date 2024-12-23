@@ -95,12 +95,7 @@ const Contact = () => {
         </GridItem>
 
         <GridItem>
-          <Box
-            className="contact-form"
-            padding={6}
-            boxShadow="md"
-            borderRadius="md"
-          >
+          <Box className="contact-form" padding={3} borderRadius="md">
             <h1
               style={{
                 fontSize: "30px",
