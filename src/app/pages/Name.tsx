@@ -48,12 +48,11 @@ const Name = () => {
               textStyle={{ base: "4xl", sm: "5xl", md: "6xl" }}
               textAlign={{ base: "center", sm: "left" }}
             >
-              &lt;Aleeza /<span className="animate-color">&gt;</span>
+              &lt;Alee<span className="animate-color">za/&gt;</span>
             </Text>
           </Stack>
         </Container>
       </Box>
-      <br />
     </>
   );
 };

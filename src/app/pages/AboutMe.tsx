@@ -77,12 +77,13 @@ export const AboutMe = () => {
           </DrawerHeader>
           <DrawerBody>
             <Text
-              fontFamily={"Inter"}
-              fontWeight="bold"
-              fontSize={"16px"}
-              lineHeight={1.5}
+              textAlign={"justify"}
               letterSpacing={1}
-              textTransform={"capitalize"}
+              lineHeight={2}
+              textTransform="Capitalize"
+              padding={2}
+              mt={4}
+              fontStyle={"italic"}
             >
               I am a frontend web developer, proficient in front-end
               technologies, capable of building complete web applications from
@@ -201,4 +202,3 @@ export const AboutMe = () => {
     </HStack>
   );
 };
-

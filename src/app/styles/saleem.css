@@ -1,0 +1,49 @@
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes textBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes textTilt {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+.animate-color {
+  background-image: linear-gradient(
+    90deg,
+    #f6490a,
+    /* Coral */ #996807,
+    /* Amber */ #6f50b3,
+    /* Teal */ #e30775,
+    /* Deep Sky Blue */ #7e00f3 /* Blue Violet */
+  );
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientFlow 4s ease infinite, textBounce 2s ease-in-out infinite,
+    textTilt 3s ease-in-out infinite;
+  display: inline-block;
+}

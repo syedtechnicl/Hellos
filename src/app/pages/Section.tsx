@@ -8,6 +8,7 @@ import "../styles/anim.css";
 import { AboutMe } from "./AboutMe";
 import Link from "next/link";
 import { PiCertificateFill } from "react-icons/pi";
+import "../styles/saleem.css";
 
 const Section = () => {
   useEffect(() => {
@@ -53,7 +54,6 @@ const Section = () => {
             </span>{" "}
             Hello, I'm
           </Text>
-
           <Text
             fontWeight="bold"
             textStyle={{ base: "4xl", sm: "5xl", md: "6xl" }}
@@ -61,7 +61,6 @@ const Section = () => {
           >
             &lt;Aleeza/<span className="animate-color">Saleem&gt;</span>
           </Text>
-          <br />
 
           <div
             id="typewriter"
