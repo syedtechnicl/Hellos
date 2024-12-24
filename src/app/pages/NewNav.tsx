@@ -41,8 +41,7 @@ const Newnav = () => {
     <nav
       className="navbar"
       style={{
-        background: colorMode === "light" ? "#fff" : "#111",
-        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+        background: colorMode === "light" ? "#fff" : "#000000",
       }}
     >
       <div className="navbar-container">
