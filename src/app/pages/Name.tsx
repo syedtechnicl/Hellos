@@ -43,10 +43,12 @@ const Name = () => {
         `}
               </style>
             </div>
+
             <Text
+              fontStyle={"italic"}
               fontWeight={"bold"}
-              textStyle={{ base: "4xl", sm: "5xl", md: "6xl" }}
-              textAlign={{ base: "center", sm: "left" }}
+              textStyle={{ base: "4xl", sm: "4xl", md: "4xl" }}
+              // textAlign={{ base: "center", sm: "left" }}
             >
               &lt;Alee<span className="animate-color">za/&gt;</span>
             </Text>

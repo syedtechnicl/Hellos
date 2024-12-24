@@ -48,6 +48,7 @@ const Section = () => {
                 animation: "waveAnimation 2s infinite",
                 display: "inline-block",
                 fontSize: "2rem",
+                fontStyle: "italic",
               }}
             >
               👋🏻
@@ -58,6 +59,7 @@ const Section = () => {
             fontWeight="bold"
             textStyle={{ base: "4xl", sm: "5xl", md: "6xl" }}
             textAlign={{ base: "center", sm: "left" }}
+            fontStyle={"italic"}
           >
             &lt;Aleeza/<span className="animate-color">Saleem&gt;</span>
           </Text>
@@ -65,6 +67,7 @@ const Section = () => {
           <div
             id="typewriter"
             style={{
+              fontStyle: "italic",
               fontWeight: "bold",
               fontSize: "44px",
               fontFamily: "'Courier New', Courier, monospace",

@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react";
 import AllComp from "./pages/AllComp";
 import { MdOutlineNightlight, MdOutlineLightMode } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
-import Link from "next/link";
 
 const Page = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -16,37 +15,17 @@ const Page = () => {
     setMounted(true);
 
     const handleScroll = () => {
-      // Calculate the scroll percentage
       const scrollTop = window.scrollY;
       const docHeight =
         document.documentElement.scrollHeight - window.innerHeight;
       const scrollPercent = (scrollTop / docHeight) * 100;
 
       setScrollPercentage(scrollPercent);
-      updateScrollbarColor(scrollPercent);
     };
 
-    const updateScrollbarColor = (scrollPercent: number) => {
-      const scrollbarThumb = document.querySelector(
-        "::-webkit-scrollbar-thumb"
-      ) as HTMLElement;
-
-      // Define a color gradient based on scroll percentage
-      const red = Math.min(255, Math.floor(scrollPercent * 2.55));
-      const green = Math.min(255, Math.floor(255 - scrollPercent * 2.55));
-      const blue = Math.min(255, Math.floor(scrollPercent * 1.27));
-
-      const color = `rgb(${red}, ${green}, ${blue})`;
-      if (scrollbarThumb) {
-        scrollbarThumb.style.backgroundColor = color;
-      }
-    };
-
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      // Cleanup event listener
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
@@ -65,32 +44,51 @@ const Page = () => {
 
   return (
     <>
-      {/* Inline style for animated red scrollbar */}
       <style jsx global>{`
-        /* Global scrollbar styles */
         html,
         body {
-          scrollbar-width: thin; /* For Firefox */
-          scrollbar-color: red transparent; /* For Firefox */
+          margin: 0;
+          padding: 0;
+          overflow: auto;
+          scrollbar-width: thin;
+          scrollbar-color: red transparent;
         }
 
         ::-webkit-scrollbar {
-          width: 12px; /* Scrollbar width */
-          height: 12px; /* Scrollbar height */
+          width: 12px;
+          height: 12px;
         }
 
         ::-webkit-scrollbar-thumb {
-          background-color: red; /* Initial color */
+          background-color: red;
           border-radius: 10px;
-          transition: background-color 0.25s ease-in-out; /* Smooth transition */
+          transition: background-color 0.25s ease-in-out;
         }
 
         ::-webkit-scrollbar-track {
-          background-color: transparent; /* Track background */
+          background-color: transparent;
         }
       `}</style>
 
       <Container>
+        <Box
+          position="fixed"
+          top="0"
+          left="0"
+          width="100%"
+          height="5px"
+          bg="gray.300"
+          zIndex={1000}
+        >
+          <Box
+            height="100%"
+            bg="red"
+            width={`${scrollPercentage}%`}
+            transition="width 0.2s ease-in-out"
+          />
+        </Box>
+
+        {/* Header Buttons */}
         <Box
           pt={3}
           display="flex"
@@ -120,7 +118,6 @@ const Page = () => {
         </Box>
 
         {/* Other Components */}
-
         <AllComp />
       </Container>
     </>
@@ -128,5 +125,3 @@ const Page = () => {
 };
 
 export default Page;
-
-// 200ns zada hota
