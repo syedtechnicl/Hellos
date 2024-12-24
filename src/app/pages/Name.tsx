@@ -53,6 +53,7 @@ const Name = () => {
               &lt;Alee<span className="animate-color">za/&gt;</span>
             </Text>
           </Stack>
+          <br />
         </Container>
       </Box>
     </>
