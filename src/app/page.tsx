@@ -5,6 +5,9 @@ import React, { useEffect, useState } from "react";
 import AllComp from "./pages/AllComp";
 import { MdOutlineNightlight, MdOutlineLightMode } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import NewYearCountdown from "./pages/NewYearCountdown";
+
+// import "./styles/Newyear.css";
 
 const Page = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -44,6 +47,18 @@ const Page = () => {
 
   return (
     <>
+      <Container>
+        <br />
+        <center>
+          {/* <small className="animated-text">
+            🌙 Wishing You an Advance Happy New Year! 🌟 May this year bring you
+            barakah (blessings), joy, success, and endless opportunities,
+            Insha'Allah. {new Date().getFullYear()}
+          </small> */}
+          <NewYearCountdown />
+        </center>
+      </Container>
+
       <style jsx global>{`
         html,
         body {
@@ -118,6 +133,7 @@ const Page = () => {
         </Box>
 
         {/* Other Components */}
+
         <AllComp />
       </Container>
     </>

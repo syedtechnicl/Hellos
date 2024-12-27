@@ -5,7 +5,8 @@ import { getDatabase } from "firebase/database";
 const firebaseConfig = {
   apiKey: "AIzaSyAe_5q7awUmZEl3nZX6BAWl7L_D73JGLYs",
   authDomain: "portfolio-6da77.firebaseapp.com",
-  databaseURL: "https://portfolio-6da77-default-rtdb.asia-southeast1.firebasedatabase.app/", // Paste your database link here
+  databaseURL:
+    "https://portfolio-6da77-default-rtdb.asia-southeast1.firebasedatabase.app/", // Paste your database link here
   projectId: "portfolio-6da77",
   storageBucket: "portfolio-6da77.appspot.com",
   messagingSenderId: "777402270784",

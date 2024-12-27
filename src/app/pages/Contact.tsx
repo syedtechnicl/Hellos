@@ -34,7 +34,7 @@ const Contact = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        "https://contact-d435a-default-rtdb.firebaseio.com/UserData.json",
+        "https://portfolio-6da77-default-rtdb.asia-southeast1.firebasedatabase.app/UserData.json",
         {
           method: "POST",
           headers: {
