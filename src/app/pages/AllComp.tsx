@@ -11,21 +11,36 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Map from "./Map";
 import Newnav from "./NewNav";
+import Fireworks from "./Fireworks";
 // import NavigationBar from "./NavigationBar";
 
 const AllComp = () => {
   return (
     <>
+      <Fireworks />
+      <Fireworks />
+
+      <Fireworks />
+
       <Name />
       {/* <NavigationBar /> */}
+
       <Newnav />
+
       <Section />
+
       <SocialMedia />
+
       <Skills />
+
       <Experience />
+
       <Work />
+
       <Contact />
+
       <Map />
+
       <Footer />
     </>
   );

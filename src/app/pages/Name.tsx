@@ -1,6 +1,8 @@
 import { Box, Container, Stack, Text } from "@chakra-ui/react";
 import React from "react";
-import { FcProcess } from "react-icons/fc";
+// import { FcProcess } from "react-icons/fc";
+import { GiSonicBoom } from "react-icons/gi";
+
 const Name = () => {
   return (
     <>
@@ -14,6 +16,20 @@ const Name = () => {
                 justifyContent: "right",
               }}
             >
+              {/* <small
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  fontSize: "16px",
+                  fontWeight: "bold",
+                  animation: "colorZoom 3s infinite",
+                  color: "#ff6a00",
+                }}
+              >
+                <FcProcess /> Happy New Year 2025
+              </small> */}
+
               <small
                 style={{
                   display: "flex",
@@ -25,7 +41,7 @@ const Name = () => {
                   color: "#ff6a00",
                 }}
               >
-                <FcProcess /> Site under construction
+                <GiSonicBoom /> Happy New Year 2025
               </small>
 
               <style>
