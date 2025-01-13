@@ -9,7 +9,6 @@ import {
 import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { IoLogoWhatsapp } from "react-icons/io";
-import Fireworks from "./Fireworks";
 
 export const SocialMedia = () => {
   const iconSize = useBreakpointValue({ base: "30px", md: "40px" });
@@ -83,7 +82,6 @@ export const SocialMedia = () => {
           </Link>
         </Box>
       </Stack>
-      <Fireworks />
     </Container>
   );
 };

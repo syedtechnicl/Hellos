@@ -41,7 +41,7 @@ const Name = () => {
                   color: "#ff6a00",
                 }}
               >
-                <GiSonicBoom /> Happy New Year 2025
+                <GiSonicBoom /> 🚧 Site Under Construction 🚧
               </small>
 
               <style>

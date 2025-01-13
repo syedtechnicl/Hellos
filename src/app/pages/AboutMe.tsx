@@ -43,6 +43,8 @@ import { DiJavascript } from "react-icons/di";
 import { GiTBrick } from "react-icons/gi";
 import Logo from "../images/ee.jpg";
 import Image from "next/image";
+import { FaWordpressSimple } from "react-icons/fa";
+
 import { motion } from "framer-motion";
 
 export const AboutMe = () => {
@@ -175,6 +177,14 @@ export const AboutMe = () => {
                       colorScheme="orange"
                     >
                       Python <FaPython style={{ color: "orange" }} />
+                    </Button>
+                    <Button
+                      variant="outline"
+                      m={2}
+                      size="lg"
+                      colorScheme="orange"
+                    >
+                      Python <FaWordpressSimple style={{ color: "orange" }} />
                     </Button>
                   </HStack>
                 </Box>

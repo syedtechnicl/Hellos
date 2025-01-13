@@ -8,6 +8,7 @@ import {
   FaNode,
 } from "react-icons/fa";
 
+import { FaWordpressSimple } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { FiGithub } from "react-icons/fi";
 import {
@@ -272,6 +273,10 @@ const Skills = () => {
                 {/* python */}
                 <Button variant="outline" m={2} size="lg">
                   Python <FaPython style={{ color: "orange" }} />
+                </Button>
+                {/* word press */}
+                <Button variant="outline" m={2} size="lg">
+                  Python <FaWordpressSimple style={{ color: "orange" }} />
                 </Button>
               </motion.div>
             </HStack>
