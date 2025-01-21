@@ -4,7 +4,10 @@ export default function RootLayout(props: { children: React.ReactNode }) {
   const { children } = props;
   return (
     <html suppressHydrationWarning>
-      <title>Aleeza Saleem</title>
+      <head>
+        <title>Aleeza Saleem</title>
+        <link rel="shortcut icon" href="/favicon.jpg" />
+      </head>
       <body>
         <Provider>{children}</Provider>
       </body>

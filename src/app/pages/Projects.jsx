@@ -18,6 +18,10 @@ import Myseven from "../images/myseven.png";
 import MyEight from "../images/MyEight.png";
 import MyNine from "../images/Ecommerce.png";
 import MyTen from "../images/myten.png";
+
+// new todo
+import NewTodo from "../images/newTodo.png"
+
 const Projects = [
   {
     id: 1,
@@ -104,6 +108,13 @@ const Projects = [
     domain: `https://paya-psi.vercel.app/Register`,
     images: MyTen,
   },
+
+  {
+    id: 18,
+    domain: `https://advance-todo-list-kohl.vercel.app/`,
+    images: NewTodo,
+  },
+
 ];
 
 export default Projects;
