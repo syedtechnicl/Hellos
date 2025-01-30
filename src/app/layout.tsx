@@ -1,3 +1,4 @@
+// syed muqtadeer new commit
 import { Provider } from "@/components/ui/provider";
 
 export default function RootLayout(props: { children: React.ReactNode }) {
