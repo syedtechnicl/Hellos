@@ -44,7 +44,7 @@ const Name = () => {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
-                <GiSonicBoom /> 🚧 Site Under Construction {greeting} 🚧
+                <GiSonicBoom /> 🚧 {greeting} 🚧
               </small>
 
               <style jsx>{`
